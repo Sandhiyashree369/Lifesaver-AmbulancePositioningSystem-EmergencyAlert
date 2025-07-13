@@ -1,0 +1,419 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{title}}</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/assets/img/favicon.png" rel="icon">
+  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mamba - v2.0.1
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script language="javascript">
+function validate()
+{
+	if(document.form1.name.value=="")
+	{
+	alert("Enter the Name");
+	document.form1.name.focus();
+	return false;
+	}
+	if(document.form1.gender[0].checked==false && document.form1.gender[1].checked==false)
+	{
+	alert("Select the Gender");
+	return false;
+	}
+	if(document.form1.dob.value=="")
+	{
+	alert("Enter the Date of Birth");
+	document.form1.dob.focus();
+	return false;
+	}
+	
+	if(document.form1.mobile.value=="")
+	{
+	alert("Enter the Mobile No.");
+	document.form1.mobile.focus();
+	return false;
+	}
+	if(isNaN(document.form1.mobile.value))
+	{
+	alert("Invalid Mobile No.");
+	document.form1.mobile.select();
+	return false;
+	}
+	if(document.form1.mobile.value.length!=10)
+	{
+	alert("Mobile No. must be 10 digits!");
+	document.form1.mobile.select();
+	return false;
+	}
+	if(document.form1.email.value=="")
+	{
+	alert("Enter the Email");
+	document.form1.email.focus();
+	return false;
+	}
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.form1.email.value))  
+	{
+	
+	}
+	else
+	{
+	alert("Invalid E-mail!");
+	document.form1.email.select();
+	return false;
+	}
+	
+	if(document.form1.address.value=="")
+	{
+	alert("Enter the Address");
+	document.form1.address.focus();
+	return false;
+	}
+	if(document.form1.city.value=="")
+	{
+	alert("Enter the City");
+	document.form1.city.focus();
+	return false;
+	}
+	if(document.form1.pincode.value=="")
+	{
+	alert("Enter the Pincode");
+	document.form1.pincode.focus();
+	return false;
+	}
+	
+	
+	if(document.form1.file1.value=="")
+	{
+	alert("Select the Aadhar Card");
+	document.form1.file1.focus();
+	return false;
+	}
+	if(document.form1.file2.value=="")
+	{
+	alert("Select the Driving License");
+	document.form1.file2.focus();
+	return false;
+	}
+	if(document.form1.file3.value=="")
+	{
+	alert("Select Vehicle Owner Photo");
+	document.form1.file3.focus();
+	return false;
+	}
+	
+	if(document.form1.vtype.selectedIndex==0)
+	{
+	alert("Select the Vehicle Type");
+	document.form1.vtype.focus();
+	return false;
+	}
+	if(document.form1.vehicle.value=="")
+	{
+	alert("Select Vehicle Name");
+	document.form1.vehicle.focus();
+	return false;
+	}
+	if(document.form1.vmodel.value=="")
+	{
+	alert("Enter the  Vehicle Model");
+	document.form1.vmodel.focus();
+	return false;
+	}
+	if(document.form1.vcolor.value=="")
+	{
+	alert("Enter rhe Vehicle Color");
+	document.form1.vcolor.focus();
+	return false;
+	}
+	
+	if(document.form1.vno.value=="")
+	{
+	alert("Enter the Vehicle No.");
+	document.form1.file3.focus();
+	return false;
+	}
+	if(document.form1.regdate.value=="")
+	{
+	alert("Enter the Registration Date");
+	document.form1.regdate.focus();
+	return false;
+	}
+	
+return true;
+}
+</script>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@info.com</a>
+        <i class="icofont-phone"></i> +1 5589 55488 55
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#"><span>Traffic Management System</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/register">Home <i class="la la-angle-down"></i></a></li>
+          <li><a href="/view_vehicle">Vehicle Info</a></li>
+		 
+          
+		  <li><a href="/logout">Logout</a></li>
+          <!--<li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>-->
+          
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  
+  
+  
+  <div class="row">
+			<div class="col-lg-3">
+				
+				<!-- A grey horizontal navbar that becomes vertical on small screens -->
+			</div>
+			
+			
+			
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header d-flex align-items-center">
+                  <h2 class="h5 display display">
+                    <h3>Vehicle Registration - RTO</h3>
+                  </h2>
+                </div>
+                <div class="card-block">
+                  <p></p>
+				  {% if msg=="success" %}
+				  <span style="color:#006600">Registered Successfully, Login Credentials sent to Mail..</span>
+				  <iframe src="http://iotcloud.co.in/testmail/testmail1.php?message={{mess}}&email={{email}}&subject=Vehicle RTO" width="5" height="5" frameborder="0"></iframe>
+				  <script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/view_vehicle';
+}, 3000);
+</script>
+				  {% endif %}
+                  <form name="form1" method="post" enctype="multipart/form-data">
+				  
+				  <div class="badge-primary">Vehicle Owner Information</div>
+				  <div class="row">
+				  		<div class="col-md-6">
+				  		<label>Name</label>
+                        <input type="text" name="name" placeholder="" class="form-control">
+				  		</div>
+						<div class="col-md-6">
+						  <label>Gender</label>
+						  <input type="radio" name="gender" value="Male" required>Male
+						  <input type="radio" name="gender" value="Female" required>Female
+						</div>
+						<div class="col-md-6">
+						  <label>Date of Birth</label>
+						  <input type="date" name="dob" placeholder="" class="form-control">
+						</div>
+						<div class="col-md-6"> 
+						  <label>Mobile no.</label>
+						  <input type="text" name="mobile" placeholder="" maxlength="10" class="form-control">
+						</div>
+						
+						<div class="col-md-6">  
+						  <label>E-mail</label>
+						  <input type="text" name="email" placeholder="" class="form-control">
+						</div>
+						<div class="col-md-6">     
+						  <label>Address</label>
+						  <input type="text" name="address" placeholder="" class="form-control">
+						</div>
+						<div class="col-md-6">      
+						  <label>City</label>
+						  <input type="text" name="city" placeholder="" class="form-control">
+						</div>
+						<div class="col-md-6">      
+						  <label>Pincode</label>
+						  <input type="text" name="pincode" placeholder="" maxlength="6" class="form-control">
+						</div>
+						
+						<div class="col-md-6">      
+						  <label>Aadhar Card</label>
+						  <input type="file" name="file1" placeholder="" class="form-control">
+						</div>
+						<div class="col-md-6">      
+						  <label>Driving License</label>
+						  <input type="file" name="file2" placeholder="" class="form-control">
+						</div>
+						<div class="col-md-6">      
+						  <label>Vehicle Owner Photo</label>
+						  <input type="file" name="file3" placeholder="" class="form-control">
+						</div>
+				  
+				  </div>
+				  
+				  
+				  <div  class="badge-primary">Vehicle Information</div>
+				  
+				<div class="row">   
+				  
+                    <div class="col-md-6">      
+                      <label>Vehicle Type</label>
+                      <select name="vtype" class="form-control">
+					  <option value="">-Vehicle Type-</option>
+					  <option>2 Wheeler</option>
+					  <option>4 Wheeler</option>
+					  </select>
+                    </div>
+					<div class="col-md-6">      
+                      <label>Vehicle Name</label>
+                      <input type="text" name="vehicle" placeholder="" class="form-control">
+                    </div>
+					
+					<div class="col-md-6">      
+                      <label>Vehicle Model</label>
+                      <input type="text" name="vmodel" placeholder="" class="form-control">
+                    </div>
+					<div class="col-md-6">      
+                      <label>Vehicle Color</label>
+                      <input type="text" name="vcolor" placeholder="" class="form-control">
+                    </div>
+					<div class="col-md-6">      
+                      <label>Vehicle Photo</label>
+                      <input type="file" name="file4" placeholder="" class="form-control">
+                    </div>
+                    
+				</div>	
+				
+				<div  class="badge-primary">RTO</div>
+				<div class="row">	
+					
+					<div class="col-md-6">      
+                      <label>Vehicle No.</label>
+                      <input type="text" name="vno" placeholder="" class="form-control">
+                    </div>
+					<div class="col-md-6">            
+                      <label>Registration Date</label>
+                      <input type="date" name="regdate" placeholder="" value="{{rdd}}" class="form-control">
+                    </div>
+					
+				</div>	
+				<br>
+				<div class="row">	
+					<div class="col-md-6"> 
+					</div>
+                   <div class="col-md-6">      
+                      <input type="submit" name="btn" value="Register" class="btn btn-primary" onClick="return validate()">
+                    </div>
+				</div>
+					
+                  </form>
+                </div>
+              </div>
+			 </div>
+
+</div>
+  
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+   
+
+    <div class="container">
+      <div class="copyright">
+       {{title}}
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+        <a href="https://bootstrapmade.com/"></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="../static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>
