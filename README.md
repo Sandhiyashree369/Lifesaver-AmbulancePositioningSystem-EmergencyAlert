@@ -80,18 +80,6 @@ Suggests shortest and clearest path for the ambulance using real-time traffic da
 
 ---
 
-## 🚀 Features
-
-- Accident hotspot prediction
-- Strategic ambulance positioning
-- Admin dashboard for NHAI
-- Notification to driver, hospital, traffic police
-- GIS-based real-time ambulance simulator
-- Flask-based responsive web UI
-- Modular codebase with MySQL backend
-
----
-
 ## 🏁 Future Scope
 
 - Integration with live government accident APIs
